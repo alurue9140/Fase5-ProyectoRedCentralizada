@@ -1,4 +1,5 @@
-$rutaFicheroEventos = "C:\Windows\System32\winevt\Logs\Security.evtx"
+#El archivo estaba en "C:\Windows\System32\winevt\Logs\Security.evtx" pero lo tuve que sacar por permisos"
+$rutaFicheroEventos = "C:\Security.evtx"
 $rutaFicheroZip = "C:\Logs\Security.zip"
 
 Compress-Archive -LiteralPath $rutaFicheroEventos -DestinationPath $rutaFicheroZip
