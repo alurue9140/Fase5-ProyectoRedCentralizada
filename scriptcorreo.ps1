@@ -22,7 +22,7 @@ $MailMessage = @{
 
 try 
 {
-  $password = "10639140" 
+  $password = "********" 
   $secureStringPwd = ConvertTo-SecureString $password -AsPlainText -Force
   $credential = new-object -typename System.Management.Automation.PSCredential -argumentlist $accountSource,$secureStringPwd
   Send-MailMessage @MailMessage -Credential $credential
